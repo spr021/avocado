@@ -3,11 +3,32 @@
 
 
 $bgcolor: #f8f0b3; 
+$bgchatbox: #eeedf7;
 $lightgreen: #67d565;
 $darkgreen: #4a7337;
 $bgwhite: #fff;
 $font: cursive;
 $selectandnew: rgb(255,118,85);
+
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $darkgreen; 
+    border-radius: 100px;
+    transition: 0.5s;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #375529; 
+    border-radius: 100px;
+    transition: 0.5s;
+  }
+
 
 body{
     background: $bgcolor;
@@ -51,7 +72,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    background-color: $bgwhite;
+    background-color: $bgchatbox;
     flex-grow: 10;
     width: 250px;
     height: 90vh;
@@ -62,7 +83,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    background-color: $bgwhite;
+    background-color: $bgchatbox;
     flex-grow: 70;
     width: 650px;
     border-radius: 0 5px 5px 0;
@@ -99,7 +120,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background: $bgwhite;
+
 }
 .name-page{
     font-size: 2em;
@@ -127,7 +148,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 40px;
-    background: $bgwhite;
     .img-search{
         height: 15px;
         margin: 0 10px 0 35px;
@@ -135,6 +155,7 @@ body{
 }
 .search-box{
     border: 0;
+    background: transparent;
     
 }
 .search-box:focus{
@@ -146,30 +167,89 @@ body{
 .sl-line{
     background-color: #ccc;
     height: 1px;
-    margin: 6px 20px 0 25px;
+    margin: 6px 20px 5px 25px;
     opacity: 0.6;
     
 }
 .list-of-contact{
-    background: $bgwhite;
     height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: auto;
+}
+.person{
+    display: flex;
+    background-color: $bgwhite;
+    height: 50px;
+    margin: 5px 20px 5px 25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5%/10%;
 }
 .ct-line{
-    width: 5px;
-    height: 60px;
+    width: 7px;
+    height: 50px;
     border-radius: 50% 0% 0% 50%;
-    margin: 10px 0px 0px 25px;
     background-color: $selectandnew;
+    color: $bgchatbox;
 }
 .img-profile{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 5px;
     
     img{
-        width: 50px;
+        width: 45px;
+        border-radius: 50%;
     }
     
 }
 .ct-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 5px 0 5px;
+    width: 100%;
     
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nick-name{
+
+        }
+        .date-pm{
+            font-size: 10px;
+
+        }
+        .last-pm{
+            color: #bbb;
+            margin-left: 5px;
+
+        }
+        .new-pm{
+            background-color: rgb(196, 21, 15);
+            border-radius: 50%;
+            width: 23px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1em;
+
+        }
+    }
 }
 .account{
     height: 100px;

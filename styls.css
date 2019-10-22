@@ -1,4 +1,25 @@
 /* sass --watch styls.scss:styls.css */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a7337;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #375529;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
 body {
   background: #f8f0b3;
   height: 100vh;
@@ -42,7 +63,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background-color: #fff;
+  background-color: #eeedf7;
   flex-grow: 10;
   width: 250px;
   height: 90vh;
@@ -53,7 +74,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background-color: #fff;
+  background-color: #eeedf7;
   flex-grow: 70;
   width: 650px;
   border-radius: 0 5px 5px 0;
@@ -92,7 +113,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background: #fff;
 }
 
 .name-page {
@@ -123,7 +143,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 40px;
-  background: #fff;
 }
 .search .img-search {
   height: 15px;
@@ -132,6 +151,7 @@ body {
 
 .search-box {
   border: 0;
+  background: transparent;
 }
 
 .search-box:focus {
@@ -142,25 +162,83 @@ body {
 .sl-line {
   background-color: #ccc;
   height: 1px;
-  margin: 6px 20px 0 25px;
+  margin: 6px 20px 5px 25px;
   opacity: 0.6;
 }
 
 .list-of-contact {
-  background: #fff;
   height: 74vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: auto;
+}
+
+.person {
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  margin: 5px 20px 5px 25px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5%/10%;
 }
 
 .ct-line {
-  width: 5px;
-  height: 60px;
+  width: 7px;
+  height: 50px;
   border-radius: 50% 0% 0% 50%;
-  margin: 10px 0px 0px 25px;
   background-color: #ff7655;
+  color: #eeedf7;
 }
 
+.img-profile {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 5px;
+}
 .img-profile img {
-  width: 50px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.ct-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 5px 0 5px;
+  width: 100%;
+}
+.ct-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ct-info div .date-pm {
+  font-size: 10px;
+}
+.ct-info div .last-pm {
+  color: #bbb;
+  margin-left: 5px;
+}
+.ct-info div .new-pm {
+  background-color: #c4150f;
+  border-radius: 50%;
+  width: 23px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1em;
 }
 
 .account {

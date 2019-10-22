@@ -1,0 +1,192 @@
+ 
+/* sass --watch styls.scss:styls.css */
+
+
+$bgcolor: #f8f0b3; 
+$lightgreen: #67d565;
+$darkgreen: #4a7337;
+$bgwhite: #fff;
+$font: cursive;
+$selectandnew: rgb(255,118,85);
+
+body{
+    background: $bgcolor;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    font-family: $font;
+    
+} 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $bgwhite;
+    box-shadow: 1px 1px #dfe5ec;
+    border-radius: 5px;
+    border-left: 1px solid #dfe5ec;
+    border-right: 1px solid #dfe5ec;
+    border-bottom: 1px solid #d2dbe3;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: $darkgreen;
+    flex-grow: 0;
+    width: 60px;
+    border-radius: 5px 0 0 5px;
+    height: 90vh;
+    
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: $bgwhite;
+    flex-grow: 10;
+    width: 250px;
+    height: 90vh;
+    
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: $bgwhite;
+    flex-grow: 70;
+    width: 650px;
+    border-radius: 0 5px 5px 0;
+    height: 90vh;
+    
+}
+.logo{
+    height: 100px;
+    .img-logo{
+        width: 56px;
+        margin: 2px;
+    }
+}
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    .img-logo{
+        width: 30px;
+        margin: 2px;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    .img-logo:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: $bgwhite;
+}
+.name-page{
+    font-size: 2em;
+    margin-left: 25px;
+    font-family: $font;
+}
+.sort{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    img{
+        width: 15px;
+        margin-right: 5px;
+    }
+    span{
+        font-size: 1em;
+        font-family: $font;
+    }
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: $bgwhite;
+    .img-search{
+        height: 15px;
+        margin: 0 10px 0 35px;
+    }
+}
+.search-box{
+    border: 0;
+    
+}
+.search-box:focus{
+    border: 0;
+    outline: none;
+    
+}
+
+.sl-line{
+    background-color: #ccc;
+    height: 1px;
+    margin: 6px 20px 0 25px;
+    opacity: 0.6;
+    
+}
+.list-of-contact{
+    background: $bgwhite;
+    height: 74vh;
+}
+.ct-line{
+    width: 5px;
+    height: 60px;
+    border-radius: 50% 0% 0% 50%;
+    margin: 10px 0px 0px 25px;
+    background-color: $selectandnew;
+}
+.img-profile{
+    
+    img{
+        width: 50px;
+    }
+    
+}
+.ct-info{
+    
+}
+.account{
+    height: 100px;
+    background: $bgwhite;
+}
+.profile{
+    height: 60px;
+    background: $bgwhite;
+    
+}
+.chat-text{
+    height: 57vh;
+    background: $bgwhite;
+    
+}
+.write-box{
+    height: 50px;
+    background: $bgwhite;
+    
+}

@@ -9,13 +9,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4a7337;
+  background: #34668f;
   border-radius: 100px;
   transition: 0.5s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #375529;
+  background: #285070;
   border-radius: 100px;
   transition: 0.5s;
 }
@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  background-color: #4a7337;
+  background-color: #34668f;
   flex-grow: 0;
   width: 60px;
   border-radius: 5px 0 0 5px;
@@ -162,12 +162,12 @@ body {
 .sl-line {
   background-color: #ccc;
   height: 1px;
-  margin: 6px 20px 5px 25px;
+  margin: 5px 20px 5px 25px;
   opacity: 0.6;
 }
 
 .list-of-contact {
-  height: 74vh;
+  height: calc(90vh - 110px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -242,23 +242,68 @@ body {
 }
 
 .account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
-  background: #fff;
+  background: #eeedf7;
 }
-
-.profile {
-  height: 60px;
-  background: #fff;
+.account div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.account .profile-img {
+  margin: 0 5px 0 25px;
+}
+.account .profile-img img {
+  width: 60px;
+}
+.account .username {
+  margin: 0 5px 0 10px;
+  font-size: 20px;
+}
+.account .new-msg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4800;
+  border-radius: 5px;
+  box-shadow: 1px 1px #ccc;
+  width: 150px;
+  height: 40px;
+  color: white;
+  margin-right: 15px;
+}
+.account .account-list .account-img {
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
+}
+.account .account-list .account-img img {
+  width: 35px;
+}
+.account .account-list .account-name {
+  margin: 0 15px 0 0;
+}
+.account .fav {
+  margin-right: 10px;
+}
+.account .fav div {
+  width: 15px;
+  margin: 0 5px 0 5px;
 }
 
 .chat-text {
-  height: 57vh;
-  background: #fff;
+  height: calc(90vh - 150px);
+  background: #eeedf7;
 }
 
 .write-box {
   height: 50px;
-  background: #fff;
+  background: #eeedf7;
 }
 
 /*# sourceMappingURL=styls.css.map */

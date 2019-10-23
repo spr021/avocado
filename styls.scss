@@ -5,7 +5,7 @@
 $bgcolor: #f8f0b3; 
 $bgchatbox: #eeedf7;
 $lightgreen: #67d565;
-$darkgreen: #4a7337;
+$darkgreen: #34668f;
 $bgwhite: #fff;
 $font: cursive;
 $selectandnew: rgb(255,118,85);
@@ -24,7 +24,7 @@ $selectandnew: rgb(255,118,85);
     transition: 0.5s;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #375529; 
+    background: #285070; 
     border-radius: 100px;
     transition: 0.5s;
   }
@@ -167,12 +167,12 @@ body{
 .sl-line{
     background-color: #ccc;
     height: 1px;
-    margin: 6px 20px 5px 25px;
+    margin: 5px 20px 5px 25px;
     opacity: 0.6;
     
 }
 .list-of-contact{
-    height: 74vh;
+    height: calc(90vh - 110px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -252,21 +252,72 @@ body{
     }
 }
 .account{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
-    background: $bgwhite;
-}
-.profile{
-    height: 60px;
-    background: $bgwhite;
-    
+    background: $bgchatbox;
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profile-img{
+        margin: 0 5px 0 25px;
+        
+        img{
+            width: 60px;
+        }
+    }
+    .username{
+        margin: 0 5px 0 10px;
+        font-size: 20px;
+
+    }
+    .new-msg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 72, 0);
+        border-radius: 5px;
+        box-shadow: 1px 1px #ccc;
+        width: 150px;
+        height: 40px;
+        color: white;
+        margin-right: 15px;
+    }
+    .account-list{
+
+        .account-img{
+            border-radius: 50%;
+            margin: 0 10px 0 10px;
+            img{
+                width: 35px;
+            }
+        }
+        .account-name{
+            margin: 0 15px 0 0;
+        }
+
+    }
+    .fav{
+        margin-right: 10px;
+        div{
+            width: 15px;
+            margin: 0 5px 0 5px;
+        }
+    }
 }
 .chat-text{
-    height: 57vh;
-    background: $bgwhite;
+    height: calc(90vh - 150px);
+    background: $bgchatbox;
     
 }
 .write-box{
     height: 50px;
-    background: $bgwhite;
+    background: $bgchatbox;
     
 }

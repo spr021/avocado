@@ -156,6 +156,7 @@ body{
 .search-box{
     border: 0;
     background: transparent;
+    height: 30px;
     
 }
 .search-box:focus{
@@ -315,11 +316,124 @@ body{
 }
 .chat-text{
     height: calc(90vh - 150px);
+    padding: 5px;
     background: $bgchatbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    .msg-you{
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .talk-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            border-radius: 50%;
+            img{
+                width: 35px;
+                border-radius: 50%;
+            }
+        }
+        .talk-msg{
+            margin: 5px;
+            max-width: 300px;
+            padding: 5px;
+            color: #222;
+            background-color: $bgwhite;
+            border-radius: 5px 5px 5px 0;
+
+        }
+    }
+    .msg-me{
+        margin: 5px;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .talk-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            border-radius: 50%;
+            img{
+                width: 35px;
+                border-radius: 50%;
+            }
+        }
+        .talk-msg{
+            margin: 5px;
+            max-width: 300px;
+            padding: 5px;
+            color: #fff;
+            background-color: $darkgreen;
+            border-radius: 5px 5px 0 5px;
+
+        }
+    }
     
 }
+.tc-line{
+    background-color: rgb(204, 204, 204);
+    height: 1px;
+    opacity: 0.6;
+    margin: 5px 40px 5px 40px;
+}
 .write-box{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0px 40px;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
     background: $bgchatbox;
     
+    .attach{
+
+        img{
+            width: 25px;
+        }
+    }
+    .write-box-chat{
+        input{
+            height: 40px;
+            border: 0;
+            background: transparent;
+            width: 450px;
+            
+        }
+        input:focus{
+            border: 0;
+            outline: none;
+            
+        }
+        
+    }
+    .emoji{
+        
+        img{
+            width: 25px;
+        }
+    }
+    .send-pm{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:rgb(255, 72, 0); 
+        img{
+            width: 20px;
+        }
+    }
 }

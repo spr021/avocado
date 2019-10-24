@@ -6,8 +6,26 @@
         <title>Avocado</title>
         <meta name="description" content="Avocado chat romm">
         <link rel="stylesheet" href="styls.css">
+        <!-- <script>
+        function chat() {
+            var sendButtom = document.getElementById("send-pm") 
+            var massage = document.getElementById("my-talk").value
+            if (sendButtom.click)
+                {
+                if (massage == "") {
+                alert("Name must be filled out");
+                return false;
+                }
+                else{
+                    var chatBox = document.createElement("div");
+                    chatBox.className = "msg-me"
+                    document.getElementById("msg-me").innerHTML = '<div class="talk-img"><img src="img/avatar/boy.png" /></div><div class="talk-msg">' + massage + '</div>'
+                }
+            }
+        }
+        </script> -->
     </head>
-    <body>
+    <body onload="chat()">
         <div class="container">
             <div class="menu">
                 <div class="logo"><img class="img-logo" src="img/logo2.png" /></div>
@@ -198,8 +216,63 @@
                             </div>
                     </div>
                 </div>
-                <div class="chat-text">chat</div>
-                <div class="write-box">write-box</div>
+                <div class="chat-text">
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">chekhabar ???</div>
+                    </div>
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">salamati</div>
+                    </div>
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">chikara mikni</div>
+                    </div>
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">sar kar miram</div>
+                    </div>
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">chikar</div>
+                    </div>
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">react</div>
+                    </div>   
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">framwork js</div>
+                    </div>
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">che khob</div>
+                    </div>           
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">polam migiri  ?</div>
+                    </div>
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">are</div>
+                    </div>
+                    <div class="msg-you">
+                        <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
+                        <div class="talk-msg">cheghadr</div>
+                    </div>
+                    <div class="msg-me">
+                        <div class="talk-img"><img src="img/avatar/boy.png" /></div>
+                        <div class="talk-msg">5 toman</div>
+                    </div>   
+                </div>
+                <div class="tc-line"></div>
+                <div class="write-box">
+                    <div class="attach"><img src="img/attachment.png" /></div>
+                    <div class="write-box-chat"><input id="my-talk" type="text" placeholder="write your massage ..." /></div>
+                    <div class="emoji"><img src="img/happiness.png" /></div>
+                    <div class="send-pm" id="send-pm"><img src="img/paper-plane.png" /></div>
+                </div>
             </div>
         </div>
     </body>

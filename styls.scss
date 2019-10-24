@@ -306,8 +306,10 @@ body{
     .fav{
         margin-right: 10px;
         div{
-            width: 15px;
             margin: 0 5px 0 5px;
+            img{
+                width: 20px;
+            }
         }
     }
 }

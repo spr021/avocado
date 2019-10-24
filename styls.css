@@ -292,8 +292,10 @@ body {
   margin-right: 10px;
 }
 .account .fav div {
-  width: 15px;
   margin: 0 5px 0 5px;
+}
+.account .fav div img {
+  width: 20px;
 }
 
 .chat-text {

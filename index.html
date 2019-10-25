@@ -7,8 +7,10 @@
         <meta name="description" content="Avocado chat romm">
         <script src="script.js"></script>
         <link rel="stylesheet" href="styls.css">
+        <link rel="stylesheet" href="profile.css">
     </head>
     <body>
+        <!-- make a buttom and when click on it window be blur -->
         <div class="container">
             <div class="menu">
                 <div class="logo"><img class="img-logo" src="img/logo2.png" /></div>
@@ -181,7 +183,7 @@
             </div>
             <div class="chat">
                 <div class="account">
-                    <div>
+                    <div onclick="profileView()">
                         <div class="profile-img"><img src="img/avatar/girl-1.png"></div>
                         <div class="username">maryam</div>
                     </div>
@@ -199,7 +201,11 @@
                             </div>
                     </div>
                 </div>
+                <div class="tc-line"></div>
                 <div class="chat-text" id="chat-text">
+                    
+
+                    <div id="chating">
                     <div class="msg-you">
                         <div class="talk-img"><img src="img/avatar/girl-1.png" /></div>
                         <div class="talk-msg">chekhaba ???</div>
@@ -247,12 +253,43 @@
                     <div class="msg-me">
                         <div class="talk-img"><img src="img/avatar/boy.png" /></div>
                         <div class="talk-msg">5 toman</div>
-                    </div>   
+                    </div> 
+                </div>
+
+                
+                    <div id="user-info-border" class="user-info-border-none">
+                        <div class="user-info">
+                        <div class="user-info-text">User Info</div>
+                        <div onclick="closeProfile()" class="close"><img src="img/multiply.png" /></div>
+                    </div>
+                    <div class="user-e">
+                        <div class="user-info-value">saber.pourrahimi.1999@gmail.com</div>
+                        <div class="user-info-input">E-mail</div>
+                    </div>
+                    <div class="user-e">
+                        <div class="user-info-value">We sit on a throne, waiting for God to bend the knee</div>
+                        <div class="user-info-input">Bio</div>
+                    </div>
+                    <div class="user-e">
+                        <div class="user-info-value">@avocado</div>
+                        <div class="user-info-input">Ussername</div>
+                    </div>
+                    <div class="tc-line"></div>
+                    <div class="user-info-menu">
+                        <div>Share contact</div>
+                        <div>Edit contact</div>
+                        <div>Delete contact</div>
+                        <div>Clear history</div>
+                        <div>Delete conversation</div>
+                        <div>Block user</div>
+                      </div>
+                    </div>
+                
                 </div>
                 <div class="tc-line"></div>
                 <div class="write-box">
                     <div class="attach"><img src="img/attachment.png" /></div>
-                    <div class="write-box-chat"><input id="my-talk" type="text" placeholder="write your massage ..." /></div>
+                    <div class="write-box-chat"><input onkeydown="send(event)" id="my-talk" type="text" placeholder="write your massage ..." /></div>
                     <div class="emoji"><img src="img/happiness.png" /></div>
                     <div onclick="chat()" class="send-pm" id="send-pm"><img src="img/paper-plane.png" /></div>
                 </div>

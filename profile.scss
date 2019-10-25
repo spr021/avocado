@@ -1,0 +1,99 @@
+
+$bgcolor: #f8f0b3; 
+$bgchatbox: #eeedf7;
+$lightgreen: #67d565;
+$darkgreen: #34668f;
+$bgwhite: #fff;
+$font: cursive;
+$selectandnew: rgb(255,118,85);
+
+.user-info-border-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: calc(90vh - 150px);
+    background-color: $bgwhite;
+    margin: 0px 150px 0px 150px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px #ccc;
+    .user-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .user-info-text{
+            font-size: 20px;
+        }
+        .close{
+            border-radius: 50%;
+            img{
+                width: 30px;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+        }
+    }
+    .user-e{
+        margin: 10px 0px 5px 20px;
+        .user-info-value{
+
+        }
+        .user-info-input{
+            color: #bbb;
+            font-size: 13px;
+        }
+    }
+    .user-info-menu{
+        margin: 10px 0px 5px 20px;
+        div{
+            margin: 5px 0px 5px 0;
+        }
+    }
+}
+.user-info-border-none{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: calc(90vh - 150px);
+    background-color: $bgwhite;
+    margin: 0px 150px 0px 150px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px #ccc;
+    .user-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .user-info-text{
+            font-size: 20px;
+        }
+        .close{
+            border-radius: 50%;
+            img{
+                width: 30px;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+        }
+    }
+    .user-e{
+        margin: 10px 0px 5px 20px;
+        .user-info-value{
+
+        }
+        .user-info-input{
+            color: #bbb;
+            font-size: 13px;
+        }
+    }
+    .user-info-menu{
+        margin: 10px 0px 5px 20px;
+        div{
+            margin: 5px 0px 5px 0;
+        }
+    }
+}

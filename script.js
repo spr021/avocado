@@ -1,12 +1,12 @@
 function profileView(){
+    document.getElementById("chat-text").scrollBy(0, -100000)
     var user = document.getElementById('user-info-border')
-    console.log(user.classList.height)
     document.getElementById("chating").style.display = 'none'
     document.getElementById('user-info-border').className = 'user-info-border-flex'
 }
 function closeProfile(){
         document.getElementById('user-info-border').className = 'user-info-border-none'
-        document.getElementById("chating").style.display = ''
+        document.getElementById("chating").style.display = 'block'
 }
 function send(event) {
     if (event.keyCode === 13) {
@@ -19,7 +19,7 @@ function chat() {
     var massage = document.getElementById("my-talk")
     massage.value.trim()
         if (massage.value == "") {
-        return false;
+        return false
         }
         else{
             var chatBox = document.createElement('div')
@@ -27,6 +27,6 @@ function chat() {
             chatBox.innerHTML = '<div class="talk-img"><img src="img/avatar/boy.png" /></div><div class="talk-msg">' + massage.value + '</div>'
             document.getElementById("chating").appendChild(chatBox)
             massage.value = ""
-            document.getElementById("chating").scrollBy(0, 1000)
+            document.getElementById("chat-text").scrollBy(0, 100000)
         }
     }
